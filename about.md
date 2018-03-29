@@ -8,15 +8,13 @@ titles:
 key: page-about
 ---
 
-Welcome to my blog! :earth_asia: :earth_africa: :earth_americas:
+Welcome to my blog! I'm currently an undergrad student at IIIS@Tsinghua, majoring computer science. I intend to use this little site to (occasionally) share topics I find interesting in CS/phyics/maths; hope that you'll like them:)
 
-{% highlight javascript %}
-(() => console.log('hello, world!'))();
-{% endhighlight %}
+In case you want to know more about me, a rough CV is provided below.
 
-## Skills
-
+## Still not ready:(
+<!--
 - HTML5, CSS3(SASS), JavaScript(ES2017, Node.js), Bash(Zsh)
 - React, React Native, Vue.js
 - gulp, webpack
-- Adobe Photoshop, Sketch
+- Adobe Photoshop, Sketch!-->
