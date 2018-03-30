@@ -1,8 +1,8 @@
 ---
 layout: post
 category: "read"
-title:  "Hello world"
-tags: [trivia,personal]
+title:  "Test Math"
+tags: [physics]
 ---
 ### Test post for MathJax
 $$e^{i\theta}=\cos\theta+i\sin\theta.$$
