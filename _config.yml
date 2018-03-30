@@ -80,7 +80,7 @@ leancloud:
   # app_key:  #LeanCloud App key
   # app_class:  #LeanCloud App class
 
-# mathjax: true
+mathjax: true
 # mathjax_autoNumber: true
 # mermaid: true
 # chart: true
@@ -91,7 +91,7 @@ paginate_path: /blog/page:num
 
 ## Post excerpts ##
 excerpt_separator: <!--more-->
-excerpt_type: text # text | html
+excerpt_type: html # text | html
 
 ## Sources ##
 # sources: bootcss #eg: bootcss | unpkg
