@@ -33,15 +33,17 @@ $r(\lambda ) = \frac{{\left( {1 - {e^2}} \right)a}}{{1 - e\cos \left( {\lambda  
 
 诸君莫慌，实际上地球的偏心率很小（e=0.0167），所以我们可以一言不合把原来的方程泰勒展开，扔掉二阶以上的项。于是我们得到
 
-;$\frac{{{\rm{d}}\lambda }}{{{\rm{d}}T}} = \frac{{{v_0}}}{a} \cdot \left( {1 - 2e\cos \left( {\lambda  - {\lambda_0}} \right) + e} \right)$
+$\frac{{\rm d}\lambda}{{\rm d}T}=\frac{v_0}{a}\cdot\left(1 - 2e\cos \left( {\lambda  - {\lambda_0}} \right) + e\right)$
 
 这个东西是可以得到解析解哒（取倒数直接积分就好了）。最终我们开心地解得
 
-;$\lambda  - {\lambda _0} = 2\arctan \left[ {\frac{{\sqrt {1 + 2e} \tan \left( {\frac{{{v_0}\left( {T - C} \right)}}{{2a}}\sqrt {1 + 2e} } \right)}}{{3e + 1}}} \right]$
+
+
+$\lambda  - {\lambda_0} = 2\arctan \left[ \frac{\sqrt {1 + 2e} \tan \left( {\frac{v_0\left( {T - C} \right)}{2a}\sqrt {1 + 2e} } \right)}{3e + 1}\right]$
 
 我们可以继续扔掉 的二阶项，最终将得到：
 
-;$\lambda  = 2\arctan \left[ {\frac{{tan\left( {\frac{{{v_0}\left( {T - C} \right)}}{{2a}}\left( {1 + e} \right)} \right)}}{{1 + 2e}}} \right] + {\lambda _0}$
+$\lambda= {\lambda_0} + 2\arctan \left[ \frac{\tan \left( {\frac{v_0\left( {T - C} \right)}{2a}\sqrt {1 + 2e} }\left(1+e\right)\right)}{1+2e}\right]$
 
 里面的$C$是积分常数，可以求得它是远日点在春分日之后的天数，大约是105天。
 得到了$\lambda$之后，可以用之前一样的公式得到$\alpha$和$\delta$。同样地，我们还是把它交给Matlab君进行绘图（仍然是$\delta$-$\alpha-\frac{T}{T_0}\cdot 2\pi$）。
