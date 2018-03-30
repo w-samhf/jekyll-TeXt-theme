@@ -29,7 +29,7 @@ $\alpha=\cos^{-1}\left(\frac{\cos\lambda}{\sqrt{1-\sin^2\varepsilon\sin^2\lambda
 $r(\lambda ) = \frac{\left( {1 - e^2} \right)a}{1 - e\cos \left( \lambda  - \lambda_0 \right)}$
 （$\lambda_0$表示远日点时的黄经）。利用角动量守恒，
 
-$\omega \left( \lambda  \right) = \frac{{\rm d}\lambda }{{\rm d}T} = \frac{v_0 \cdot \left( 1 + e \right)a}{r\left( \lambda  \right)^2} = \frac{v_0 \cdot \left( {1 + e} \right)}{\left( {1 - e^2 \right)}^2a} \cdot \left( 1 - e\cos \left( \lambda  - \lambda_0 \right) \right)^2$
+$\omega \left( \lambda  \right) = \frac{ {\rm d}\lambda }{ {\rm d} T} = \frac{v_0 \cdot \left( 1 + e \right)a}{r\left( \lambda  \right)^2} = \frac{v_0 \cdot \left( {1 + e} \right)}{\left( {1 - e^2 \right)}^2a} \cdot \left( 1 - e\cos \left( \lambda  - \lambda_0 \right) \right)^2$
 
 诸君莫慌，实际上地球的偏心率很小（e=0.0167），所以我们可以一言不合把原来的方程泰勒展开，扔掉二阶以上的项。于是我们得到
 
