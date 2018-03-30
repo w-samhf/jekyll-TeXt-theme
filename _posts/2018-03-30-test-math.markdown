@@ -5,10 +5,14 @@ title:  "Test Math"
 tags: [physics]
 ---
 ### Test post for MathJax
-$$e^{i\theta}=\cos\theta+i\sin\theta.$$
-$$A\rightarrow B$$
+$\newcommand{\Ket}[1]{\left|#1\right>}$<br>
+$$e^{i\theta}=\cos\theta+i\sin\theta.$$<br>
+$$A\rightarrow B$$<br>
 <!--more-->
+
 To derive possible finite-dimensional irreducible representations of $SU\left(2\right)$, we start from its Lie algebra, which spanned by $J_1$, $J_2$ and $J_3$ where
+
 $$\left[J_a,J_b\right]=i\epsilon_{abc}J_c.$$
+
 It is known that $J^2=J_1^2+J_2^2+J_3^2$ commutes with $J_1$, $J_2$ and $J_3$; as a result, it acts as a scalar multiple of the identity in each irreducible subrepresentation. This scalar is used to label different representations, while the eigenvalues of $J_3$ are used to label basis vectors in the representation. To be more concrete, let $\Ket{b,m}$ be a basis vector such that
 $$J^2\Ket{b,m}=b\Ket{b,m},\quad J_3\Ket{b,m}=m\Ket{b,m}.$$

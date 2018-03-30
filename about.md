@@ -12,7 +12,8 @@ Welcome to my blog! I'm currently an undergrad student at IIIS@Tsinghua, majorin
 
 In case you want to know more about me, a rough CV is provided below.
 
-## Still not ready:(
+### not ready yet:(
+
 <!--
 - HTML5, CSS3(SASS), JavaScript(ES2017, Node.js), Bash(Zsh)
 - React, React Native, Vue.js
