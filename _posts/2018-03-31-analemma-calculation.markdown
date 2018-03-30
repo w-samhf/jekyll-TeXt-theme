@@ -26,10 +26,10 @@ $\alpha=\cos^{-1}\left(\frac{\cos\lambda}{\sqrt{1-\sin^2\varepsilon\sin^2\lambda
 。我们假设地球匀速公转，所以$\lambda=\frac{T}{T_0}\cdot 2\pi$（$T$是春分日之后的天数）。这样我们就得到了每一天太阳的赤经和赤纬。而日行迹的纵轴差不多就是赤纬，横轴则可以用$\alpha-\frac{T}{T_0}\cdot 2\pi$。接下来用一个T向量交给Matlab君画图就好了~
 
 我们得到的是一个对称的八字形，比折线好多了，可是还是和正版的日行迹不大一样。为什们呢？或许是因为地球的轨道是椭圆形，导致 随时间的变化不是均匀的。椭圆的极坐标方程（以焦点为原点）是：
-$r(\lambda ) = \frac{\left( {1 - {e^2}} \right)a}{1 - e\cos \left( \lambda  - {\lambda_0} \right)}$
+$r(\lambda ) = \frac{\left( {1 - e^2} \right)a}{1 - e\cos \left( \lambda  - \lambda_0 \right)}$
 （$\lambda_0$表示远日点时的黄经）。利用角动量守恒，
 
-;$\omega \left( \lambda  \right) = \frac{{{\rm{d}}\lambda }}{{{\rm{d}}T}} = \frac{v_0 \cdot \left( 1 + e \right)a}{r{{\left( \lambda  \right)}^2}} = \frac{{v_0 \cdot \left( {1 + e} \right)}}{{{{\left( {1 - {e^{\rm{2}}}} \right)}^{\rm{2}}}a}} \cdot {\left( {1 - e\cos \left( {\lambda  - {\lambda_0}} \right)} \right)^2}$
+$\omega \left( \lambda  \right) = \frac{{\rm d}\lambda }{{\rm d}T} = \frac{v_0 \cdot \left( 1 + e \right)a}{r\left( \lambda  \right)^2} = \frac{v_0 \cdot \left( {1 + e} \right)}{\left( {1 - e^2 \right)}^2a} \cdot \left( 1 - e\cos \left( \lambda  - \lambda_0 \right) \right)^2$
 
 诸君莫慌，实际上地球的偏心率很小（e=0.0167），所以我们可以一言不合把原来的方程泰勒展开，扔掉二阶以上的项。于是我们得到
 
