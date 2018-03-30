@@ -21,7 +21,7 @@ tags: [physics,童年梦想系列]
 
 接着可以得到
 $\alpha=\cos^{-1}\left(\frac{\cos\lambda}{\sqrt{1-\sin^2\varepsilon\sin^2\lambda}}\right)$
-<!--$\alpha  = {\cos ^{ - 1}}\left( {\frac{{\cos \lambda }}{{\sqrt {1 - {{\sin }^{\rm{2}}}\varepsilon {{\sin }^2}\lambda } }}} \right)$!-->
+
 ，$\delta  = \sin ^{-1}\left(\sin \varepsilon \sin \lambda\right)$
 。我们假设地球匀速公转，所以$\lambda=\frac{T}{T_0}\cdot 2\pi$（$T$是春分日之后的天数）。这样我们就得到了每一天太阳的赤经和赤纬。而日行迹的纵轴差不多就是赤纬，横轴则可以用$\alpha-\frac{T}{T_0}\cdot 2\pi$。接下来用一个T向量交给Matlab君画图就好了~
 
