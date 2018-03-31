@@ -12,7 +12,7 @@ tags: [physics,童年梦想系列]
 <!--more-->
 
 <figure>
-  <img src="{{site.url}}/pics/analemma/analemma1.jpg" alt="Analemma at Bell labs"/>
+  <img src="{{site.url}}/pics/analemma/analemma1.jpg" alt="Analemma at Bell labs" height="50%" width="50%"/>
   <figcaption>贝尔实验室上方的日行迹，作者Jack Fishburn.</figcaption>
 </figure>
 <!--![Analemma at Bell labs](/pics/analemma/analemma1.jpg){:height="50%" width="50%"}
