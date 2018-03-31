@@ -3,6 +3,7 @@ layout: post
 category: "read"
 title:  "Hello world"
 tags: [trivia,personal]
+key: "hello-world-1"
 ---
 ### Hello world!
 This is the very first post of this little site. Hope that it will become helpful for its owner and its readers, if any.
