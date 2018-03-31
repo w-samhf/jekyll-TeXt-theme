@@ -12,7 +12,7 @@ key: page-about
 
 I'm currently an undergrad student at IIIS@Tsinghua, majoring computer science. I intend to use this little site to (occasionally) share topics I find interesting in CS/phyics/maths; hope that you'll like them:)
 
-In case you want to know more about me, a rough CV is provided below. A pdf version is available here.
+In case you want to know more about me, a rough CV is provided below. A pdf version is available [here](/files/cv.pdf).
 
 ### Education
 - 2010.8-2016.6 Affiliated High School of SCNU

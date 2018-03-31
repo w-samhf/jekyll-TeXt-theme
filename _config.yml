@@ -111,7 +111,7 @@ exclude:
   - CHECKLIST.md
   - Gemfile
   - Gemfile.lock
-  #- LICENSE
+  - LICENSE
   - README-*.md
   - README.md
   - gulpfile.js
