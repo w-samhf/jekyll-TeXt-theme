@@ -6,12 +6,15 @@ tags: [physics,童年梦想系列]
 ---
 ## 日行迹始末
 
-(计算日行迹也算是我少年时期的梦想；这篇文章基于我高三时的计算以及大一时写的一篇微信推送)
+(计算日行迹也算是我少年时期的梦想：我在初中时就想定量地解出曲线，在高一时曾经尝试过未果；最终我在高三时又想起了这个问题并轻松地完成了计算。这篇文章基于我高三时的计算以及大一时写的一篇微信推送)
 
 **日行迹(analemma)** 指的是太阳一周年中每天同一时刻的位置所连成的轨迹。由于计时系统是和平太阳(假象的匀速运动的太阳)的运动对应的，日行迹也反映着真太阳与平太阳的偏差。
 <!--more-->
-![Analemma at Bell labs](/pics/analemma/analemma1.jpg)
+![Analemma at Bell labs](/pics/analemma/analemma1.jpg){:height="50%" width="50%"}
+
 可以看到，日行迹呈一个上小下大的不对称的诡异8字形，太阳在二月时位于左下方，五月的时候位于右上方，八月的时候来到左上方，十一月时回到右下方(见下图)。
+
+![Analemma-wikipedia](/pics/analemma/Analemma_Earth.png){:height="50%" width="50%"}
 
 那么是什么因素导致了这个日行迹的奇怪形状呢？本篇文章中，笔者将尝试用理论计算的方式回答。首先，如果太阳和平太阳的赤经运动速度相同，但是正午高度角会照常变化，那么每天正午的时候太阳也会准确地回到子午线上。这样的话，一年中太阳只会在子午线上上下折返，日行迹将是一条折线。这个......好像差的比较多。
 
@@ -25,11 +28,15 @@ $\alpha=\cos^{-1}\left(\frac{\cos\lambda}{\sqrt{1-\sin^2\varepsilon\sin^2\lambda
 ，$\delta  = \sin ^{-1}\left(\sin \varepsilon \sin \lambda\right)$
 。我们假设地球匀速公转，所以$\lambda=\frac{T}{T_0}\cdot 2\pi$（$T$是春分日之后的天数）。这样我们就得到了每一天太阳的赤经和赤纬。而日行迹的纵轴差不多就是赤纬，横轴则可以用$\alpha-\frac{T}{T_0}\cdot 2\pi$。接下来用一个T向量交给Matlab君画图就好了~
 
+![matlab-plot-1](/pics/analemma/plot1.jpg){:height="50%" width="50%"}
+
 我们得到的是一个对称的八字形，比折线好多了，可是还是和正版的日行迹不大一样。为什们呢？或许是因为地球的轨道是椭圆形，导致 随时间的变化不是均匀的。椭圆的极坐标方程（以焦点为原点）是：
 $r(\lambda ) = \frac{\left( {1 - e^2} \right)a}{1 - e\cos \left( \lambda  - \lambda_0 \right)}$
 （$\lambda_0$表示远日点时的黄经）。利用角动量守恒，
 
-$\omega \left( \lambda  \right) = \frac{ {\rm d}\lambda }{ {\rm d} T} = \frac{v_0 \cdot \left( 1 + e \right)a}{r\left( \lambda  \right)^2} = \frac{v_0 \cdot \left( {1 + e} \right)}{\left( {1 - e^2 \right)}^2a} \cdot \left( 1 - e\cos \left( \lambda  - \lambda_0 \right) \right)^2$
+$$\omega \left( \lambda  \right) = \frac{ {\rm d}\lambda }{ {\rm d} T} = \frac{v_0 \cdot \left( 1 + e \right)a}{r\left( \lambda  \right)^2} $$
+
+$$ \frac{v_0 \cdot \left( {1 + e} \right)}{\left( {1 - e^2 \right)}^2a} \cdot \left( 1 - e\cos \left( \lambda  - \lambda_0 \right) \right)^2$$
 
 诸君莫慌，实际上地球的偏心率很小（e=0.0167），所以我们可以一言不合把原来的方程泰勒展开，扔掉二阶以上的项。于是我们得到
 
@@ -47,6 +54,8 @@ $\lambda= {\lambda_0} + 2\arctan \left[ \frac{\tan \left( {\frac{v_0\left( {T - 
 
 里面的$C$是积分常数，可以求得它是远日点在春分日之后的天数，大约是105天。
 得到了$\lambda$之后，可以用之前一样的公式得到$\alpha$和$\delta$。同样地，我们还是把它交给Matlab君进行绘图（仍然是$\delta$-$\alpha-\frac{T}{T_0}\cdot 2\pi$）。
+
+![matlab-plot-2](/pics/analemma/plot2.bmp){:height="50%" width="50%"}
 
 可以看到，考虑了离心率的一阶项之后，计算得到的理论日行迹有了不对称、上小下大的基本特征，和实际已经很接近啦。
 
