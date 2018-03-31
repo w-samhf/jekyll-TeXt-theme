@@ -10,8 +10,13 @@ tags: [physics,童年梦想系列]
 
 **日行迹(analemma)** 指的是太阳一周年中每天同一时刻的位置所连成的轨迹。由于计时系统是和平太阳(假象的匀速运动的太阳)的运动对应的，日行迹也反映着真太阳与平太阳的偏差。
 <!--more-->
-![Analemma at Bell labs](/pics/analemma/analemma1.jpg){:height="50%" width="50%"}
-*贝尔实验室上方的日行迹，作者Jack Fishburn*
+
+<figure>
+  <img src="{{site.url}}/pics/analemma/analemma1.jpg" alt="Analemma at Bell labs"/>
+  <figcaption>贝尔实验室上方的日行迹，作者Jack Fishburn.</figcaption>
+</figure>
+<!--![Analemma at Bell labs](/pics/analemma/analemma1.jpg){:height="50%" width="50%"}
+*贝尔实验室上方的日行迹，作者Jack Fishburn*-->
 
 可以看到，日行迹呈一个上小下大的不对称的诡异8字形，太阳在二月时位于左下方，五月的时候位于右上方，八月的时候来到左上方，十一月时回到右下方(见下图)。
 
