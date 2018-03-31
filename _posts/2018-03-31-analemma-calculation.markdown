@@ -28,33 +28,33 @@ tags: [physics,童年梦想系列]
 
 在这种假设下，我们再来考虑一下日行迹的形状。由太阳引“垂线”到天赤道上，利用球面三角的正弦和余弦定理，可以得到下图的两个公式。
 
-接着可以得到
-$\alpha=\cos^{-1}\left(\frac{\cos\lambda}{\sqrt{1-\sin^2\varepsilon\sin^2\lambda}}\right)$
+![handwritten-equation](/pics/analemma/equation.jpg){:height="80%" width="80%"}
 
-，$\delta  = \sin ^{-1}\left(\sin \varepsilon \sin \lambda\right)$
+接着可以得到
+$\alpha=\cos^{-1}\left(\frac{\cos\lambda}{\sqrt{1-\sin^2\varepsilon\sin^2\lambda}}\right)$，$\delta  = \sin ^{-1}\left(\sin \varepsilon \sin \lambda\right)$
 。我们假设地球匀速公转，所以$\lambda=\frac{T}{T_0}\cdot 2\pi$（$T$是春分日之后的天数）。这样我们就得到了每一天太阳的赤经和赤纬。而日行迹的纵轴差不多就是赤纬，横轴则可以用$\alpha-\frac{T}{T_0}\cdot 2\pi$。接下来用一个T向量交给Matlab君画图就好了~
 
 ![matlab-plot-1](/pics/analemma/plot1.jpg){:height="50%" width="50%"}
 
 我们得到的是一个对称的八字形，比折线好多了，可是还是和正版的日行迹不大一样。为什们呢？或许是因为地球的轨道是椭圆形，导致 随时间的变化不是均匀的。椭圆的极坐标方程（以焦点为原点）是：
-$r(\lambda ) = \frac{\left( {1 - e^2} \right)a}{1 - e\cos \left( \lambda  - \lambda_0 \right)}$
+$$r(\lambda ) = \frac{\left( {1 - e^2} \right)a}{1 - e\cos \left( \lambda  - \lambda_0 \right)}$$
 （$\lambda_0$表示远日点时的黄经）。利用角动量守恒，
 
 $$\omega \left( \lambda  \right) = \frac{ {\rm d}\lambda }{ {\rm d} T} = \frac{v_0 \cdot \left( 1 + e \right)a}{r\left( \lambda  \right)^2} = \frac{v_0 \cdot \left( 1 + e \right)}{\left( 1 - e^2 \right)^2a} \cdot \left( 1 - e\cos \left( \lambda  - \lambda_0 \right) \right)^2$$
 
-诸君莫慌，实际上地球的偏心率很小（e=0.0167），所以我们可以一言不合把原来的方程泰勒展开，扔掉二阶以上的项。于是我们得到
+诸君莫慌，实际上地球的偏心率很小（e=0.0167），所以我们可以~~一言不合~~把原来的方程泰勒展开，扔掉二阶以上的项。于是我们得到
 
-$\frac{ {\rm d}\lambda}{ {\rm d}T}=\frac{v_0}{a}\cdot\left(1 - 2e\cos \left( {\lambda  - {\lambda_0}} \right) + e\right)$
+$$\frac{ {\rm d}\lambda}{ {\rm d}T}=\frac{v_0}{a}\cdot\left(1 - 2e\cos \left( {\lambda  - {\lambda_0}} \right) + e\right).$$
 
 这个东西是可以得到解析解哒（取倒数直接积分就好了）。最终我们开心地解得
 
 
 
-$\lambda  - {\lambda_0} = 2\arctan \left[ \frac{\sqrt {1 + 2e} \tan \left( {\frac{v_0\left( {T - C} \right)}{2a}\sqrt {1 + 2e} } \right)}{3e + 1}\right]$
+$$\lambda  - {\lambda_0} = 2\arctan \left[ \frac{\sqrt {1 + 2e} \tan \left( {\frac{v_0\left( {T - C} \right)}{2a}\sqrt {1 + 2e} } \right)}{3e + 1}\right]$$
 
 我们可以继续扔掉 的二阶项，最终将得到：
 
-$\lambda= {\lambda_0} + 2\arctan \left[ \frac{\tan \left( {\frac{v_0\left( {T - C} \right)}{2a}\sqrt {1 + 2e} }\left(1+e\right)\right)}{1+2e}\right]$
+$$\lambda= {\lambda_0} + 2\arctan \left[ \frac{\tan \left( {\frac{v_0\left( {T - C} \right)}{2a}\sqrt {1 + 2e} }\left(1+e\right)\right)}{1+2e}\right]$$
 
 里面的$C$是积分常数，可以求得它是远日点在春分日之后的天数，大约是105天。
 得到了$\lambda$之后，可以用之前一样的公式得到$\alpha$和$\delta$。同样地，我们还是把它交给Matlab君进行绘图（仍然是$\delta$-$\alpha-\frac{T}{T_0}\cdot 2\pi$）。
