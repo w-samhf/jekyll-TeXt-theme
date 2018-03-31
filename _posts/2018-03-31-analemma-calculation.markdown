@@ -11,6 +11,7 @@ tags: [physics,童年梦想系列]
 **日行迹(analemma)** 指的是太阳一周年中每天同一时刻的位置所连成的轨迹。由于计时系统是和平太阳(假象的匀速运动的太阳)的运动对应的，日行迹也反映着真太阳与平太阳的偏差。
 <!--more-->
 ![Analemma at Bell labs](/pics/analemma/analemma1.jpg){:height="50%" width="50%"}
+*贝尔实验室上方的日行迹，作者Jack Fishburn*
 
 可以看到，日行迹呈一个上小下大的不对称的诡异8字形，太阳在二月时位于左下方，五月的时候位于右上方，八月的时候来到左上方，十一月时回到右下方(见下图)。
 
@@ -34,9 +35,7 @@ $\alpha=\cos^{-1}\left(\frac{\cos\lambda}{\sqrt{1-\sin^2\varepsilon\sin^2\lambda
 $r(\lambda ) = \frac{\left( {1 - e^2} \right)a}{1 - e\cos \left( \lambda  - \lambda_0 \right)}$
 （$\lambda_0$表示远日点时的黄经）。利用角动量守恒，
 
-$$\omega \left( \lambda  \right) = \frac{ {\rm d}\lambda }{ {\rm d} T} = \frac{v_0 \cdot \left( 1 + e \right)a}{r\left( \lambda  \right)^2} $$
-
-$$ \frac{v_0 \cdot \left( 1 + e \right)}{\left( 1 - e^2 \right)^2a} \cdot \left( 1 - e\cos \left( \lambda  - \lambda_0 \right) \right)^2$$
+$$\omega \left( \lambda  \right) = \frac{ {\rm d}\lambda }{ {\rm d} T} = \frac{v_0 \cdot \left( 1 + e \right)a}{r\left( \lambda  \right)^2} = \frac{v_0 \cdot \left( 1 + e \right)}{\left( 1 - e^2 \right)^2a} \cdot \left( 1 - e\cos \left( \lambda  - \lambda_0 \right) \right)^2$$
 
 诸君莫慌，实际上地球的偏心率很小（e=0.0167），所以我们可以一言不合把原来的方程泰勒展开，扔掉二阶以上的项。于是我们得到
 
