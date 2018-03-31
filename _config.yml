@@ -66,7 +66,7 @@ disqus:
 gitalk:
   clientID:  37afe9fd47121912efba #Github Application Client ID
   clientSecret: 7e5e4154ceb4681a2aca62e07d9e1b2774c742fa #Github Application Client Secret
-  repository: blog-comments
+  repository: blog-gitalk
   owner: w-samhf
   admin:
     - w-samhf
