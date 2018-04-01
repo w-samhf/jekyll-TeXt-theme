@@ -39,7 +39,8 @@ I am also an astronomy amateur, and enjoy stargazing. I am also a big fan of Bay
 * 2017, visited University of Oxford for 3 weeks as part of Tsinghua University Distinguished Students Summer Programme
 * 2017, received 9th of December Scholarship (for distinguished sophomores in Tsinghua)
 
-You are the  <img border="0" src="http://cc.amazingcounters.com/counter.php?i=3221522&c=9664879" alt="AmazingCounters.com">th visitor of this site.
+<br>You are the  <img border="0" src="http://cc.amazingcounters.com/counter.php?i=3221522&c=9664879" alt="AmazingCounters.com">th visitor of this site.
+
 <!--
 - HTML5, CSS3(SASS), JavaScript(ES2017, Node.js), Bash(Zsh)
 - React, React Native, Vue.js
