@@ -10,6 +10,8 @@ key: page-about
 
 ### Welcome to my blog!
 
+You are the <img border="0" src="http://cc.amazingcounters.com/counter.php?i=3221522&c=9664879" alt="AmazingCounters.com">th visitor.
+
 I'm currently an undergrad student at IIIS@Tsinghua, majoring computer science. I intend to use this little site to (occasionally) share topics I find interesting in CS/phyics/maths; hope that you'll like them:)
 
 In case you want to know more about me, a rough CV is provided below. A pdf version is available [here](/files/cv.pdf).
