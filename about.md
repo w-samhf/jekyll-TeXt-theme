@@ -44,4 +44,4 @@ I am also an astronomy amateur, and enjoy stargazing. I am also a big fan of Bay
 
 ### Sorry, not yet available
 
-<br>You are the  <a><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3221522&c=9664879" alt="AmazingCounters.com"></a>th visitor of this site.
+<br>You are the  <a><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3221522&c=9664879" alt="AmazingCounters.com" display:inline></a>th visitor of this site.
