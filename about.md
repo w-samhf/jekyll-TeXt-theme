@@ -8,7 +8,7 @@ titles:
 key: page-about
 ---
 
-### Welcome to my blog!
+<!--### Welcome to my blog!!-->
 
 I'm currently an undergrad student at IIIS@Tsinghua, majoring computer science. I intend to use this little site to (occasionally) share topics I find interesting in CS/phyics/maths; hope that you'll like them:)
 

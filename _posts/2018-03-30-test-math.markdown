@@ -2,7 +2,7 @@
 layout: post
 category: "read"
 title:  "Test Math"
-tags: [physics]
+tags: [physics,math]
 key: "test-math"
 ---
 ### Test post for MathJax
