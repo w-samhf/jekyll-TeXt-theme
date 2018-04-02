@@ -4,6 +4,7 @@ category: "read"
 title:  "变分初步"
 tags: [童年梦想系列,math]
 key: "variational-problem"
+published: false
 ---
 
 可能每个人小时候都思考过这个问题：
