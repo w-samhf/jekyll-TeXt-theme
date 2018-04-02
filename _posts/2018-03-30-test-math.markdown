@@ -4,6 +4,7 @@ category: "read"
 title:  "Test Math"
 tags: [physics,math]
 key: "test-math"
+published: false
 ---
 ### Test post for MathJax
 $$\newcommand{\Ket}[1]{\left|#1\right>}$$

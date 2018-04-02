@@ -3,6 +3,7 @@ layout: post
 category: "read"
 title:  "Calculating the analemma"
 tags: [physics,童年梦想系列]
+published: false
 ---
 ## 日行迹始末
 
